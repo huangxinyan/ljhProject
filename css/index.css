@@ -15,8 +15,9 @@ html,body{
     width:100%;
 }
 .top_back{
-    height:138px;
+    height:auto;
     width:100%;
+    overflow:hidden;
 }
 .container{
     height:auto;
@@ -28,20 +29,20 @@ html,body{
     padding:0 10px;
 }
 .container .top{
-    height:138px;
+    height:auto;
+    width:100%;
 }
 .top_left{
     max-width:324px;
     height:138px;
-    float:left;
     display:flex;
     align-items:center;
+    float:left;
 }
 .top_right{
     max-width:836px;
     height:138px;
     float:right;
-    background:cyan;
     text-align:right;
 }
 .top_right p{
@@ -57,7 +58,7 @@ html,body{
 }
 .top_right form{
     width:auto;
-    float:right;
+    display:inline-block;
     height:28px;
     margin-top:15px;
 }
@@ -149,14 +150,14 @@ html,body{
 /*lunbo*/
 .lunbo{
     height:394px;
-    background:blue;
     overflow:hidden;
     position:relative;
 }
 .lunbo .play{
-    width:3789px;
+    width:6315px;
     height:394px;
     position:absolute;
+    left:-1263px;
 }
 .lunbo .play li{
     float:left;
@@ -186,11 +187,12 @@ html,body{
     border:2px solid #ccc;
     background-color:#f0f0ef;
     margin-left:12px;
+    cursor:pointer;
 }
 .lunbo .dot span.active{
     background-color:#fcfcfc;
 }
-.lunbo .btn{
+.lunbo .btn2{
     height:44px;
     width:44px;
     -webkit-border-radius: 44px;
@@ -219,7 +221,6 @@ html,body{
 }
 .container .health{
     overflow:hidden;
-    background:red;
     max-width:1180px;
     margin:0 auto;
     height:auto;
@@ -256,6 +257,7 @@ html,body{
 }
 .health dl dt img{
     width:100%;
+
     max-height:266px;
     vertical-align:middle;
     padding: 20px 0;
@@ -284,7 +286,6 @@ html,body{
 }
 .detail{
     min-height:461px;
-    background:blue;
     max-width:1160px;
     margin:0 auto;
     padding:0 10px;
@@ -317,7 +318,6 @@ html,body{
     max-width:100%;
 }
 .detail .detail_right {
-    background:red;
     /*width:50%;*/
     width:51.72%;
     float:left;
@@ -395,7 +395,6 @@ html,body{
     max-width:1160px;
     padding:0 10px;
     margin:0 auto;
-    background:yellow;
     text-align:center;
     padding-top:49px;
 }
